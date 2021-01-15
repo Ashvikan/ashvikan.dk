@@ -16,11 +16,22 @@
             }
 
             img {
-                transition: transform 2s;
+                animation: ashvi 2s linear infinite;
+            }
+
+            @keyframes ashvi {
+            0% {
                 transform: rotate(0deg);
             }
-            img:hover {
-                transform: rotate(180deg);
+            
+            50% {
+                transform: rotate(180deg) scale(1.2);
+            }
+            
+            99% {
+                transform: rotate(359deg);
+            }
+            
             }
         </style>
     </head>
